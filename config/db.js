@@ -6,10 +6,11 @@
 
 // export default dbConnect
 
-import mongoose from "mongoose"
+import mongoose from "mongoose";
 
 const dbConnect = async () => {
-  await mongoose.connect(process.env.MONGO_URI)
-}
+  await mongoose.connect(process.env.MONGO_URI);
+  console.log("MongoDB Connected");
+};
 
-export default dbConnect
+export default dbConnect;
